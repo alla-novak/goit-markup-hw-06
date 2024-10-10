@@ -1095,6 +1095,8 @@ padding:8px;
 }
 .privacy-policy {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
 }
 .modal-form-input {
     width: 100%;
@@ -1165,6 +1167,9 @@ padding:8px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .checkbox:checked+.privacy-policy-label .privacy-icon-span {
