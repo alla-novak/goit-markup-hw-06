@@ -510,7 +510,7 @@ fill: #f4f4fd;
         line-height: 1.2;
     }
 
-    .solution-text {
+    .features-dscr {
         font-weight: 400;
     }
 
@@ -730,3 +730,210 @@ fill: #f4f4fd;
     }
 }
 
+
+/* -------------------------------Footer--------------------------- */
+
+.page-footer {
+    background-color: #2e2f42;
+    padding: 96px 0;
+}
+.social-media-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footer-text{
+    text-align: center;
+}
+
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+.footer-note {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 288px;
+    margin-bottom: 72px;
+    text-align: left;
+}
+.social-media-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.social-media-link.footer:hover,
+.social-media-link.footer:focus {
+    background-color: #31d0aa;
+}
+.social-media-link.footer {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media{
+    display: block;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0;
+}
+.socnet-link.footer{
+    display: inline-block;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.social-media-link.footer{
+padding:8px;
+}
+
+.email-input-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.subscribe-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.footer-email {
+    width: 288px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-email::placeholder {
+    color: #fff;
+}
+.email-label-footer {
+    background-color: transparent;
+}
+.footer-subscribe-btn {
+    width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding: 8px 24px;
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #404bbf;
+    cursor: pointer;
+}
+.plane-icon {
+    fill: #fff;
+    margin-left: 16px;
+}
+.email-label-footer {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .container.footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .social-media{
+        margin: 0;
+    }
+    .email-input-footer{
+        flex-direction: row;
+        gap: 24px;
+    }
+    .footer-logo{
+        display: block;
+        text-align: left;
+    }
+    .social-media-p{
+    text-align: left;
+    }
+    .subscribe-text{
+        text-align: left;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1158px) {
+.page-footer {
+        padding: 100px 0;
+    }
+
+    .social-media-footer {
+        display: flex;
+        gap: 16px;
+    }
+
+    .container.footer {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-text {
+        margin-right: 120px;
+    }
+
+    .subscribe-footer {
+        margin-left: auto;
+        width: 453px;
+        height: 80px;
+    }
+
+    .email-input-footer {
+        gap: 24px;
+    }
+
+    .footer-email {
+        width: 264px;
+    }
+}
