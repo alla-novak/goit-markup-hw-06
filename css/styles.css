@@ -232,6 +232,8 @@ button{
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .mobile-menu-close {
@@ -246,10 +248,94 @@ button{
     padding: 0;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    stroke-width: 1px;
+    fill: #2e2f42;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-nav {
-    margin-bottom: auto;
+    margin-bottom: 168px;
+}
+
+.mobile-nav-list{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.mobile-nav-link{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current-mobile{
+    color: #404bbf;
+}
+
+.contacts-list-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.contacts-link-mobile {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-mobile:hover,
+.nav-link-mobile:focus,
+.contacts-link-mobile:hover,
+.contacts-link-mobile:focus {
+
+    color: #404bbf;
+}
+
+.current-link {
+    color: #4d5ae5;
+
+}
+
+.media-list-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.item-media-mobile {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.icon-media-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: #f4f4fd;
+}
+
+.icon-media-mobile:hover,
+.icon-media-mobile:focus {
+    background-color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
@@ -257,3 +343,5 @@ button{
         display: none;
     }
 }
+
+/*------------------------Title section-------------------*/
