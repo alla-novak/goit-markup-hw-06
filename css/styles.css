@@ -925,6 +925,7 @@ padding:8px;
         row-gap: 72px;
         padding-left: 108px;
         padding-right: 108px;
+        
     }
     .social-media{
         margin: 0;
@@ -955,12 +956,13 @@ padding:8px;
  .container.footer {
     display: flex;
      align-items: baseline;
-    align-items: center;
      gap: 0;
     row-gap: 0;
-     padding: auto;
      flex-wrap: nowrap;
-     margin: 0;
+     padding-left: 0;
+     padding-right: 0;
+     max-width: 1158px;
+    margin: 0 auto;
  }
 
     .social-media-footer {
